@@ -1,0 +1,36 @@
+<script>
+    function identify(context){
+    return context.name.toUpperCase();
+}
+
+function speak(context){
+    var greeting = 'hello i am ' + identify(context);
+    console.log(greeting);
+}
+
+var me = {
+    name : "Sanjeev"
+}
+
+var you = {
+    name : "Kumar"
+}
+
+function foo(number){
+    console.log("foo" + number);
+    this.count++;
+}
+
+foo.count = 0;
+
+
+
+for(i=0; i<10; i++){
+    if(i>2){
+        foo(i);
+    }
+}
+
+
+
+</script>>
